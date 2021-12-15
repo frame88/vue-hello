@@ -2,3 +2,10 @@
     background-color: black;
     color: rgb(231, 105, 105);
 }
+
+.container-plus {
+    display: flex;
+    justify-content: center;
+    align-items: middle;
+}
+
