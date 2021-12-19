@@ -10,8 +10,11 @@ Poi aggiungiamo un pulsante per aumentare questo numero.
 
 var app = new Vue ({
     el: '#app',
-    data: prompt('inserisci del testo : ')
-}
+    data: {
+    message: 'ciaooooooooo',
+    text: '',
+    place: 'Inserisci qualcosa'
+},
 })
 
 

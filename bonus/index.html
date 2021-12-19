@@ -12,7 +12,10 @@
     <div class="container-plus">
         <div class="container">
             <div id="app">
-                <span> {{message}} </span>
+                <span> {{ message }} </span>
+                <input type="text" v-model='text' :placeholder='place'>
+                <br>
+                <span>{{ text }}</span>
             </div>
         </div>
     </div>
