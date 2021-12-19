@@ -11,10 +11,23 @@ Poi aggiungiamo un pulsante per aumentare questo numero.
 var app = new Vue ({
     el: '#app',
     data: {
-    message: 'ciaooooooooo',
+    message: 'Messaggio per il bonus',
     text: '',
-    place: 'Inserisci qualcosa'
+    place: 'Inserisci qualcosa',
+    num: 5
 },
+    methods: {
+        aggiungi: function () {
+            this.num += 1;
+            document.getElementById("remove").disabled = false; 
+        },
+        rimuovi: function () {
+            if (this.num != 0) {
+                this.num -= 1;
+            }
+            else document.getElementById("remove").disabled = true; 
+        }
+    }
 })
 
 

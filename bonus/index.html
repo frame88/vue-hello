@@ -16,6 +16,10 @@
                 <input type="text" v-model='text' :placeholder='place'>
                 <br>
                 <span>{{ text }}</span>
+                <br>
+                <button @click = 'aggiungi'>Aggiungi</button>
+                <button @click = 'rimuovi' id="remove">Rimuovi</button>
+                <span>prodotti nel carrello: {{ num }}</span>
             </div>
         </div>
     </div>
